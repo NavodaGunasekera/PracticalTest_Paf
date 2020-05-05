@@ -2,13 +2,19 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="ISO-8859-1">
+
 <link rel="stylesheet" href="Views/bootstrap.min.css"> 
-<script src="Components/jquery-3.2.1.min.js">
-</script> <script src="Components/main.js"></script> 
-<title>Insert title here</title>
+
+<script src="Components/jquery-3.2.1.min.js"></script> 
+
+<script src="Components/main.js"></script> 
+
+<title>Patient Details</title>
 </head>
+
 <body>
 <div class="container"> 
 	<div class="row">  
@@ -23,7 +29,7 @@
 					<span class="input-group-text" id="lblId">Id:   </span>    
 					</div>   
 					
-				 	<input type="number" id="txtId" name="txtId" min="1" max="150">   
+				 	<input type="number" id="id" name="id" min="1" max="150">   
 				</div>
 				   
 				<!-- NAME -->   
@@ -32,7 +38,7 @@
 					<span class="input-group-text" id="lblName">Name: </span>    
 					</div>   
 					
-				 	<input type="text" id="txtName" name="txtName">   
+				 	<input type="text" id="name" name="name">   
 				</div>
 				
 				<!-- GENDER -->   
@@ -53,7 +59,16 @@
 					<span class="input-group-text" id="lblAge">Age: </span>    
 					</div>   
 					
-				 	<input type="number" id="txtAge" name="txtAge" min="1" max="150">   
+				 	<input type="number" id="age" name="age" min="1" max="150">   
+				</div>
+				
+				<!-- MEDICLE REPORT -->   
+				<div class="input-group input-group-sm mb-3"> 
+					<div class="input-group-prepend">    
+					<span class="input-group-text" id="lblMedicleReport">Medical Report: </span>    
+					</div>   
+					
+				 	<input type="text" id="medicleReport" name="medicleReport">   
 				</div>
 				
 				<!-- CONTACT No -->   
@@ -62,7 +77,7 @@
 					<span class="input-group-text" id="lblContactNo">ContactNo: </span>    
 					</div>   
 					
-				 	<input type="tel" id="ContactNo" name="ContactNo" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">   
+				 	<input type="tel" id="contactNo" name="contactNo" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">   
 				</div>
 				
 				<!-- EMAIL -->   
@@ -71,7 +86,7 @@
 					<span class="input-group-text" id="lblEmail">Email: </span>    
 					</div>   
 					
-				 	<input type="email" id="txtEmail" name="txtEmail">   
+				 	<input type="email" id="email" name="email">   
 				</div>
 				
 				<!-- ADDRESS -->   
@@ -80,17 +95,9 @@
 					<span class="input-group-text" id="lblAddress">Address: </span>    
 					</div>   
 					
-				 	<input type="text" id="txtAddress" name="txtAddress">   
+				 	<input type="text" id="address" name="address">   
 				</div>
 				
-				<!-- MEDICLE REPORT -->   
-				<div class="input-group input-group-sm mb-3"> 
-					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblMedicleReport">Medicle Report: </span>    
-					</div>   
-					
-				 	<input type="text" id="txtMedicleReport" name="txtMedicleReport">   
-				</div>
 				
 				<!-- TIME -->   
 				<div class="input-group input-group-sm mb-3"> 
@@ -98,7 +105,7 @@
 					<span class="input-group-text" id="lblTime">Time: </span>    
 					</div>   
 					
-				 	<input type="time" id="txtTime" name="txtTime">   
+				 	<input type="time" id="time" name="time">   
 				</div>
 				
 				<!-- DATE -->   
@@ -107,7 +114,7 @@
 					<span class="input-group-text" id="lblDate">Date: </span>    
 					</div>   
 					
-				 	<input type="date" id="txtDate" name="txtDate">   
+				 	<input type="date" id="date" name="date">   
 				</div>
 				
 				<div id="alertSuccess" class="alert alert-success"></div>   
@@ -119,10 +126,14 @@
 		</div> 
 	</div>    
 	
-	<br>    
+	<br>
+	<h2>Patient</h2>
+	<div class="row">
+		<ul id="patient" class="row" ></ul>
+	</div>    
 	
 	<div class="row">  
-		<div class="col-12" id="colPatients"></div> 
+		<div class="col-12" id="patient"></div> 
 	</div> 
  
 </div>
