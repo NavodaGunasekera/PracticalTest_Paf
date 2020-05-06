@@ -8,7 +8,7 @@ $(function(){
 	var $patient =$('#patient');
 	var $id =$('#id');
 	var $name =$('#name');
-	var $gender =$('#gender');
+	var $gender =$('input[name="rdoGender"]:checked');
 	var $age =$('#age');
 	var $medicleReport =$('#medicleReport');
 	var $contactNo =$('#contactNo');
@@ -45,6 +45,7 @@ $(function(){
 																																				  +'</span><input class="edit date"/><input type="button" id="'
 																																				  +patient.id
 																																				  +'" value="Remove" class="btn btn-danger remove"><input type="button" " value="Edit" class="editapp noedit"><input type="button" " value="Save" class="saveedit edit"><input type="button" " value="Cancel" class="canceledit edit"></li>');
+																																				
 				
 			});
 			
