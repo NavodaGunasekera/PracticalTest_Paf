@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -29,20 +24,9 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_191">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/Admin/.m2/repository/org/glassfish/jersey/core/jersey-common/2.16/jersey-common-2.16.jar" sourcepath="C:/Users/Admin/.m2/repository/org/glassfish/jersey/core/jersey-common/2.16/jersey-common-2.16-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/org/glassfish/jersey/core/jersey-common/2.16/jersey-common-2.16-javadoc.jar!/"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.archivename" value="jersey-common-2.16.jar"/>
-			<attribute name="maven.groupId" value="org.glassfish.jersey.core"/>
-			<attribute name="maven.artifactId" value="jersey-common"/>
-			<attribute name="maven.version" value="2.16"/>
-			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>

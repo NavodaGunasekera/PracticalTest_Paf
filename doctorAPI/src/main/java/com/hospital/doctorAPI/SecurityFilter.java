@@ -9,7 +9,7 @@ import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 
-import org.glassfish.jersey.internal.util.Base64;
+//import org.glassfish.jersey.internal.util.Base64;
 
 
 //@Provider
@@ -27,12 +27,12 @@ public class SecurityFilter implements ContainerRequestFilter{
 			if (authHeader != null && authHeader.size() > 0) {
 				String authTocken = authHeader.get(0);
 				authTocken = authTocken.replaceFirst(AUTH_HEADER_PREFIX, "");
-				String decodeString = Base64.decodeAsString(authTocken);
-				StringTokenizer tockenizer = new StringTokenizer(decodeString, ":");
-				String username = tockenizer.nextToken();
-				String password = tockenizer.nextToken();
+				//String decodeString = Base64.decodeAsString(authTocken);
+				//StringTokenizer tockenizer = new StringTokenizer(decodeString, ":");
+				//String username = tockenizer.nextToken();
+				//String password = tockenizer.nextToken();
 
-				if ("payment".equals(username) && "pass".equals(password)) {
+				//if ("payment".equals(username) && "pass".equals(password)) {
 					return ;
 				}
 			}
@@ -43,4 +43,4 @@ public class SecurityFilter implements ContainerRequestFilter{
 
 	}
 
-}
+//}

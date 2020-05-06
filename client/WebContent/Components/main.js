@@ -100,27 +100,27 @@ $(function(){
 			dataType:"json",
 			
 			success: function(newPatient){
-				$patient.append('<li><div class="student card bg-light m-2\" style=\"width: 12rem;float: left;">ID:<span class="noedit id">'+newpatient.id
+				$patient.append('<li><div class="student card bg-light m-2\" style=\"width: 12rem;float: left;">ID:<span class="noedit id">'+newPatient.id
 						  																														+'</span><input class="edit id"/><br>Name:<span class="noedit name">'
-						  																														+newpatient.name
+						  																														+newPatient.name
 						  																														+'</span><input class="edit name"/> <br>Gender:<span class="noedit gender">'
-						  																														+newpatient.gender
+						  																														+newPatient.gender
 						  																														+'</span><input class="edit gender"/> <br>Age:<span class="noedit age">'
-						  																														+newpatient.age
+						  																														+newPatient.age
 						  																														+'</span><input class="edit age"/> <br>MedicleReport:<span class="noedit medicleReport">'
-						  																														+newpatient.medicleReport
+						  																														+newPatient.medicleReport
 						  																														+'</span><input class="edit medicleReport"/> <br>ContactNo:<span class="noedit contactNo">'
-						  																														+newpatient.contactNo
+						  																														+newPatient.contactNo
 						  																														+'</span><input class="edit contactNo"/> <br>Email:<span class="noedit email">'
-						  																														+newpatient.email
+						  																														+newPatient.email
 						  																														+'</span><input class="edit email"/> <br>Address:<span class="noedit address">'
-						  																														+newpatient.address
+						  																														+newPatient.address
 						  																														+'</span><input class="edit address"/> <br>Time:<span class="noedit time">'
-						  																														+newpatient.time
+						  																														+newPatient.time
 						  																														+'</span><input class="edit time"/> <br>Date:<span class="noedit date">'
-						  																														+newpatient.date
+						  																														+newPatient.date
 						  																														+'</span><input class="edit date"/><input type="button" id="'
-						  																														+newpatient.id
+						  																														+newPatient.id
 						  																														+'" value="Remove" class="btn btn-danger remove"><input type="button" " value="Edit" class="editapp noedit"><input type="button" " value="Save" class="saveedit edit"><input type="button" " value="Cancel" class="canceledit edit"></li>');
 																																				  
 				$("#alertSuccess").text("Saved successfully.");

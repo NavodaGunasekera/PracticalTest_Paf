@@ -19,14 +19,14 @@
 <div class="container"> 
 	<div class="row">  
 		<div class="col-8">       
-			<h1 class="m-3">Patient details</h1>
+			<h1 class="m-3">Add new patient</h1>
 			        
 			<form id="formPatient"> 
 			     
 			     <!--ID -->   
 				<div class="input-group input-group-sm mb-3"> 
 					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblId">Id:   </span>    
+					<span class="input-group-text" id="lblId">Id No:   </span>    
 					</div>   
 					
 				 	<input type="number" id="id" name="id" min="1" max="150">   
@@ -56,7 +56,7 @@
 				<!-- AGE -->   
 				<div class="input-group input-group-sm mb-3"> 
 					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblAge">Age: </span>    
+					<span class="input-group-text" id="lblAge">Age : </span>    
 					</div>   
 					
 				 	<input type="number" id="age" name="age" min="1" max="150">   
@@ -65,7 +65,7 @@
 				<!-- MEDICLE REPORT -->   
 				<div class="input-group input-group-sm mb-3"> 
 					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblMedicleReport">Medical Report: </span>    
+					<span class="input-group-text" id="lblMedicleReport">Medical Reports: </span>    
 					</div>   
 					
 				 	<input type="text" id="medicleReport" name="medicleReport">   
@@ -74,7 +74,7 @@
 				<!-- CONTACT No -->   
 				<div class="input-group input-group-sm mb-3"> 
 					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblContactNo">ContactNo: </span>    
+					<span class="input-group-text" id="lblContactNo">Contact Number: </span>    
 					</div>   
 					
 				 	<input type="tel" id="contactNo" name="contactNo" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">   
@@ -92,7 +92,7 @@
 				<!-- ADDRESS -->   
 				<div class="input-group input-group-sm mb-3"> 
 					<div class="input-group-prepend">    
-					<span class="input-group-text" id="lblAddress">Address: </span>    
+					<span class="input-group-text" id="lblAddress">Addre: </span>    
 					</div>   
 					
 				 	<input type="text" id="address" name="address">   
